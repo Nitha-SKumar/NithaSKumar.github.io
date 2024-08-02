@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .about-section, .projects-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .about-section img {
+            width: 300px;
+            height: 300px;
+            object-fit:cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .about-section h1, .projects-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .contact-section {
+          background-color: #000;
+          color: #fff;
+          padding: 50px 20px;
+      }
+      .contact-section h1 {
+          font-size: 2.5rem;
+          margin-bottom: 20px;
+      }
+      .contact-info p {
+          font-size: 1.2rem;
+          margin: 10px 0;
+      }
+      .contact-info img, .social-icons img {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+          vertical-align: middle;
+      }
+      .social-icons a {
+          display: inline-block;
+          margin: 10px 20px;
+          font-size: 1rem;
+          color: #fff;
+          text-decoration: none;
+      }
+      .social-icons a img {
+          width: 32px;
+          height: 32px;
+      }
+
+
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Evenly space the cards within the container */
+        gap: 20px; /* Space between cards */
+    }
+    
+    .skill-card {
+        flex: 1 1 200px; /* Cards can grow and shrink starting from 200px */
+        max-width: 300px; /* Maximum width of each card */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Distributes space inside the card */
+        background-color: #fff; /* White background for the card */
+        text-align: center; /* Center-aligns the text inside the card */
+        margin-bottom: 20px; /* Space below each card */
+    }
+
+    .skills-section h2 {
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    
+    .skill-card h3 {
+        margin-bottom: 15px; /* Space below the heading */
+    }
+    
+    .skill-card p {
+        flex-grow: 1; /* Allows the paragraph to fill available vertical space */
+    }
+    
+    .skills-container {
+        margin-bottom: 50px; /* Space below the entire container */
+    }
+    
+    
+    .skill-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .certificates-section {
+        padding: 50px 0; /* Top and bottom padding */
+        background-color: #f8f9fa; /* Light gray background for the section */
+    }
+    
+    .certificates-section h2 {
+        text-align: center; /* Center-aligns the text */
+        font-size: 2.4rem; /* Large font size for visibility */
+        margin-bottom: 30px; /* Adds space below the heading */
+    }
+    
+    .certificate-card {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
+        padding: 20px; /* Padding inside each card */
+        border-radius: 8px; /* Rounded corners for the cards */
+        background-color: #fff; /* White background for the cards */
+        text-align: center; /* Center-aligns all text within the cards */
+        margin-bottom: 20px; /* Adds space below each card */
+    }
+    
+    .btn-primary {
+        color: #fff; /* White text color */
+        background-color: #007bff; /* Primary button color */
+        border-color: #007bff; /* Border color matches the background */
+        text-decoration: none; /* Removes underline from links */
+        padding: 10px 20px; /* Padding inside the button */
+        border-radius: 5px; /* Slightly rounded corners for the button */
+        transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+    }
+    
+    .btn-primary:hover {
+        background-color: #0056b3; /* Darker blue when hovered */
+        border-color: #004085; /* Darker border color on hover */
+    }
+    .contact-info {
+        display: flex;
+        align-items: center; /* Centers items vertically */
+        justify-content: center; /* Centers items horizontally within the container */
+        gap: 20px; /* Adds space between email and phone number */
+    }
+    
+    .contact-info p {
+        margin: 0; /* Removes default margin */
+        display: flex;
+        align-items: center; /* Aligns the icons and text vertically */
+    }
+    
+    .contact-info img {
+        margin-right: 10px; /* Space between the icon and text */
+        vertical-align: middle; /* Aligns icons with the text */
+    }
+    
+
+    html {
+      scroll-behavior: smooth;
+  }
+  
+  body {
+      position: relative;
+  }
+  
+  .navbar {
+      margin-bottom: 0;
+  }
+  
+  #home {
+      height: 0;
+      margin-top: -56px; /* Adjust if your navbar height is different */
+  }
+  
+  .navbar-nav .nav-link {
+      color: #fff !important;
+      transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+      color: #ddd !important; /* Change this to your desired hover color */
+  }
+    </style>
+    
+</head>
+<body>
+  
+   
+    <!-- Home Section Placeholder -->
+    <section id="home" style="padding-top: 56px;">
+    </section>
+    
+    <!-- Rest of the sections go here -->
+</body>
+
+
+
+<!-- About Section -->
+<section id="about" class="about-section" id="about">
+    <div class="container">
+        <h1>About Me</h1>
+        <img src="images/about/4.jpg" alt="About Picture">
+        <p class="text-justify">
+          Hello! My name is Nitha S Kumar. I'm an enthusiastic and motivated data analyst with a passion for turning data into actionable insights. My journey into data analysis began with a fascination for numbers and a keen interest in uncovering hidden patterns within datasets. 
+        </p>
+        <p class="text-justify">
+          I have a solid foundation in SQL and am currently honing my skills in data visualization and statistical analysis. My goal is to leverage data to solve real-world problems and help organizations make informed decisions.
+        </p>
+        <p class="text-justify">
+          Throughout my learning journey, I have gained proficiency in data cleaning, data manipulation, and basic exploratory data analysis. I am continuously learning and expanding my skill set to include advanced techniques and tools in the field of data analytics.
+        </p>
+        <p class="text-justify">
+          I am excited about the endless possibilities that data analysis offers and am eager to contribute to projects that make a meaningful impact. Let's connect and explore how we can turn data into impactful insights together!
+        </p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section" id="projects">
+    <div class="container text-center">
+        <h1>Projects</h1>
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/projects/1.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Business Insights 360</h5>
+                        <p class="card-text">Successfully completing the Codebasics Power BI course offered valuable insights into problem-solving beyond the tools. The course covered essential skills like SQL, Power BI Desktop, Excel, DAX, and DAX Studio for optimizing reports.</p>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiMmIwNzU1NDAtNTFkMy00MTA0LTg5NjItNjQyY2RiODQ3MjVhIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" class="card-link">Live Report Link</a>
+                        <a href="https://github.com/Nitha-SKumar/Business-Insights-360" class="card-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">AtliQo Telecom Analysis</h5>
+                        <p class="card-text">AtliQo, a leading telecom provider in India, seeks detailed insights from an analytics report comparing key performance indicators (KPIs) before and after their 5G launch in May 2022 to address a decline in active users and revenue growth.</p>
+                        <a href="ttps://app.powerbi.com/view?r=eyJrIjoiMWU4ODkxM2MtNjRlZC00ZjFlLWFhNGYtZGJiOTIyMmFkMTQ4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" class="card-link">Live Report Link</a>
+                        <a href="https://github.com/Nitha-SKumar/AtliQo-Telecom-Analysis-Power-BI" class="card-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Energy Drinks Market Analysis</h5>
+                        <p class="card-text">
+                          The analysis of the Indian energy drinks market for CodeX, a German beverage company, focused on consumer demographics, marketing effectiveness and product development, based on a survey of 10,000 respondents.</p>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiNmRhNGFkNWUtMTMxZC00OTc1LWE0NTMtMDA3NjYwMWRkM2FiIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" class="card-link">Live Report Link</a>
+                        <a href="https://github.com/Nitha-SKumar/Codex-Market-Survey-Analysis" class="card-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/projects/4.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">AtliQ Mart Supply Chain Analysis</h5>
+                        <p class="card-text">AtliQ Mart, an FMCG manufacturer in Gujarat, India, is addressing service issues by tracking daily 'On-Time' and 'In-Full' delivery metrics for key customers to improve service levels before expanding to other cities.</p>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiNjdkODdkM2QtN2E1Yi00ZDE2LTgwMDItMzY2MTE4NjAwNGY2IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" class="card-link">Live Report Link</a>
+                        <a href="https://github.com/Nitha-SKumar/AtliQ-Mart-Supply-Chain-Analysis" class="card-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="col-md-4">
+              <div class="card mb-4">
+                  <img src="images/projects/5.jpg" class="card-img-top" alt="Project 2">
+                  <div class="card-body">
+                      <h5 class="card-title">Pizza Sales Analysis</h5>This project showcases SQL queries analyzing a pizza restaurant's ordering system data, providing insights into sales trends, customer preferences, and operational metrics at Basic, Intermediate, and Advanced levels.</p>
+                      <a href="https://app.powerbi.com/view?r=eyJrIjoiMDQ3YjljNmUtNjc1NC00MmE3LWEyMjEtNjlhYmViN2I3Zjc1IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" class="card-link">Live Report Link</a>
+                      <a href="https://github.com/Nitha-SKumar/PizzaSales_SQL-PowerBI" class="card-link">Source Code</a>
+                  </div>
+              </div>
+          </div>
+            <!-- Project 6 -->
+            <div class="col-md-4">
+              <div class="card mb-4">
+                  <img src="images/projects/6.jpg" class="card-img-top" alt="Project 2">
+                  <div class="card-body">
+                      <h5 class="card-title">Sales and Finance Analysis</h5>
+                      <p class="card-text">This project used Excel to conduct in-depth sales and financial data analysis, generating comprehensive customer performance, market comparison, and Profit & Loss reports to support business decision-making and strategic planning.</p>
+                      
+                      <a href="https://github.com/Nitha-SKumar/Excel_Sales_Analytics" class="card-link">Source Code</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+
+
+                    
+<section class="skills-section" id="skills">
+    <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Python</h3>
+                
+            </div>
+            <div class="skill-card">
+                <h3>SQL</h3>
+                
+            </div>
+           
+            <div class="skill-card">
+                <h3>Power BI</h3>
+                
+            </div>
+            <div class="skill-card">
+                <h3>Excel</h3>
+                
+            </div>
+           
+            
+        </div>
+    </div>
+</section>
+
+<!-- Certificate Section -->
+
+<section class="certificates-section" id="certificates">
+    <div class="container">
+        <h2>Certificates</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="certificate-card">
+                    <h3>Excel</h3>
+                    <p>Issued by Codebasics - March 2024</p>
+                    <a href="https://codebasics.io/certificate/CB-51-35253" class="btn btn-primary" target="_blank">View Certificate</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="certificate-card">
+                    <h3>SQL</h3>
+                    <p>Issued by Codebasics - May 2023</p>
+                    <a href="https://codebasics.io/certificate/CB-50-35253" class="btn btn-primary" target="_blank">View Certificate</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="certificate-card">
+                    <h3>Power BI</h3>
+                    <p>Issued by Udemy - February 2024</p>
+                    <a href="https://codebasics.io/certificate/CB-49-35253" class="btn btn-primary" target="_blank">View Certificate</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="certificate-card">
+                    <h3>Data Science and Analytics</h3>
+                    <p>Issued by ICT Academy - May 2022</p>
+                    <a href="https://drive.google.com/file/d/1pIuSktsIoVP6LdlBeZn4rSrwmdQIDhLp/view" class="btn btn-primary" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="certificate-card">
+                    <h3>ML and AI</h3>
+                    <p>Issued by ICT Academy - August 2023</p>
+                    <a href="https://drive.google.com/file/d/1CZt-j97NfYoa0NDwfGxnee2xlUJQYNuK/view?usp=sharing" class="btn btn-primary" target="_blank">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container text-center">
+        <h1>Contact Me</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="contact-info" style="display: flex; align-items: center; justify-content: center;">
+                    <p style="margin-right: 20px;"><img src="icons/email.jpeg" alt="Email Icon" style="vertical-align: middle;"> nithaskumar@gmail.com</p>
+                    <p><img src="icons/phone.png" alt="Phone Icon" style="vertical-align: middle;"> +971 529818962</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nithaskumar/" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn Icon"> LinkedIn</a>
+                    <a href="https://github.com/Nitha-SKumar?tab=repositories" target="_blank"><img src="icons/github.png" alt="GitHub Icon"> GitHub</a>
+                </div>
+                <!-- Resume Download Link -->
+                <a href="documents/NithaSKumar_Resume.pdf" class="resume-link btn btn-primary" target="_blank">Download My Resume</a>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Home Section Placeholder -->
+  <section id="home" style="padding-top: 56px;">
+  </section>
+
+  <!-- Other sections (About, Projects, Skills, Contact) go here -->
+</body>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
